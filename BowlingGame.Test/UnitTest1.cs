@@ -43,7 +43,5 @@ namespace BowlingGame.Test
 
             Assert.AreEqual(9, partie.nbTours);
         }
-
-
     }
 }
