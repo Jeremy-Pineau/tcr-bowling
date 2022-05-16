@@ -6,8 +6,20 @@ namespace BowlingGame.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CreationPartieTest()
         {
+            var partie = new Partie();
+
+            Assert.AreEqual(10, partie.nbQuilles);
+            Assert.AreEqual(2, partie.nbLancerRestant);
+            Assert.AreEqual(0, partie.Score);
+            Assert.AreEqual(0, partie.nbTours);
+        }
+
+        [TestMethod]
+        public void Lancer_Faisant_Tomber_()
+        {
+
         }
     }
 }
