@@ -10,13 +10,20 @@ namespace BowlingGame
     {
         public int nbQuilles { get; set; } = 10;
         public int nbLancerRestant { get; set; } = 2;
-        public int Score { get; set; }
-        public int nbTours { get; set; }
+        public int Score { get; private set; }
+        public int nbTours { get; set; } = 10;
 
+        public Joueurs Joueur { get; set; }
 
-        public int Lancer(int ajoutScore)
+        public void Lancer(int ajoutScore)
         {
-            return Score = ajoutScore;
+           Score = ajoutScore;
+           nbLancerRestant--;
+        }
+
+        public void FinTour()
+        {
+            nbTours--;
         }
     }
 }
