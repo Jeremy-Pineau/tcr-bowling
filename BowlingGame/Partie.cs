@@ -8,15 +8,15 @@ namespace BowlingGame
 {
     public class Partie
     {
-        public int nbQuilles { get; private set; } = 10;
-        public int nbLancerRestant { get; private set; } = 2;
-        public int Score { get; private set; } = 0;
-        public int nbTours { get; private set; } = 0;
+        public int nbQuilles { get; set; } = 10;
+        public int nbLancerRestant { get; set; } = 2;
+        public int Score { get; set; }
+        public int nbTours { get; set; }
 
 
-        public void TesterPartie()
+        public int Lancer(int ajoutScore)
         {
-            
+            return Score = ajoutScore;
         }
     }
 }

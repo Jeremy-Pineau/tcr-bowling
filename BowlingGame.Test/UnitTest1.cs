@@ -17,9 +17,12 @@ namespace BowlingGame.Test
         }
 
         [TestMethod]
-        public void Lancer_Faisant_Tomber_()
+        public void Lancer_Faisant_Tomber_5_quilles_test()
         {
+            var partie = new Partie();
+            partie.Lancer(5);
 
+            Assert.AreEqual(5, partie.Score);
         }
     }
 }
